@@ -13,7 +13,7 @@ No settings to configure. Just install and enjoy.
 
 Feel free to follow me on Twitter <a href="https://twitter.com/AnthoPak">@AnthoPak</a> to get live updates!
 
-<img src="https://i.imgur.com/5ncNQ31.jpg" width="200">
+<img src="https://i.imgur.com/ByAMr5P.jpg" width="400">
 
 
 ## Licence
