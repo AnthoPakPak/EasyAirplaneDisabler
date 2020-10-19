@@ -19,17 +19,11 @@
         [settingsAction setTitle:localizedDisable];
     }
 }
-%end
+%end //hook SBApplicationLaunchNotifyAirplaneModeAlertItem
 
 %end //group EasyAirplaneDisabler
 
 
 %ctor {
-    if (![NSProcessInfo processInfo]) return;
-    NSString *processName = [NSProcessInfo processInfo].processName;
-    BOOL isSpringboard = [@"SpringBoard" isEqualToString:processName];
-
-    if (isSpringboard) {
-        %init(EasyAirplaneDisabler);
-    }
+    %init(EasyAirplaneDisabler);
 }
