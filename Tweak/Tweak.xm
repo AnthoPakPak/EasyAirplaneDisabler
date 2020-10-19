@@ -5,7 +5,10 @@
 //Replace "Open Settings" action with "Turn off Airplane"
 %hook SBApplicationLaunchNotifyAirplaneModeAlertItem
 -(void)_sendUserToSettings {
-    [self _turnOffAirplaneMode];
+//     [self _turnOffAirplaneMode]; //Seems like they made some cleaning in iOS 14, they got rid of this method.
+    RadiosPreferences *preferences = [%c(RadiosPreferences) new];
+    [preferences setAirplaneMode:NO];
+    [preferences synchronize];
 }
 
 -(void)didActivate {
